@@ -13,6 +13,7 @@ useEffect(() => {
       height: 300,} })
       .then(stream =>{
         video.current.srcObject = stream;
+        video.current.play();
         console.log("kamera acıldı..");
       }).catch(err=> console.log(err))
 
